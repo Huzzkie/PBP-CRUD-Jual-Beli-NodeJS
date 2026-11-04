@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toko Lorem</title>
+  <style>
+    th, td {
+      padding-right: 25px; 
+      padding-bottom: 8px; 
+      text-align: left;   
+    }
+  </style>
+</head>
+<body>
+<h1>Toko Lorem</h1>
+    <form id="pembelianBarang">
+        <input id="id_barang" placeholder="ID Barang" required>
+        <input id="barang" placeholder="Nama Barang" required>
+        <input type="number" id="jumlah_stok" placeholder="Stok Tersedia" required>
+        <input type="number" id="harga" placeholder="Harga Barang" required>
+
+        <button type="submit" id="btnSimpan">Simpan</button>
+        <button type="button" id="btnBatal">Batal</button>
+    </form>
+
+    <table style="padding-top: 20px;">
+    <thead style="padding-right: 20px;">
+        <tr>
+        <th>ID Barang</th>
+        <th>Nama Barang</th>
+        <th>Jumlah Stok</th>
+        <th>Harga</th>
+        <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody id="dataBarang"></tbody>
+    </table>
+    <p id="pesan" role="status"></p>
+
+    <a href="/beli.html">
+        <button type="button">Buka Laman Pembeli</button>
+    </a>
+
+
+<script src="script.js"></script>
+</body>
+</html>
